@@ -1,0 +1,12 @@
+{
+  "name": "contrarian-coder-landing",
+  "version": "1.0.0",
+  "description": "Landing page for Contrarian Coder VS Code Extension",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html index.js index.css LICENSE Dockerfile package.json dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
