@@ -4,7 +4,7 @@
   "description": "Landing page for Contrarian Coder VS Code Extension",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html index.js index.css LICENSE Dockerfile package.json dist/"
+    "build": "mkdir -p dist && cp index.html index.js index.css *.vsix LICENSE Dockerfile package.json dist/"
   },
   "keywords": [],
   "author": "",
