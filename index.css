@@ -108,28 +108,18 @@ nav {
     letter-spacing: -1px;
 }
 
-.nav-links {
-    display: flex;
-    gap: var(--spacing-lg);
-    list-style: none;
+.chip-nav {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    margin: 0 var(--spacing-lg);
 }
 
-.nav-links a {
-    color: var(--on-surface-variant);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--primary);
-}
-
-.nav-actions {
-    display: flex;
-    gap: 15px;
+.btn-nav {
+    padding: 1rem 3rem;
+    font-size: 1.15rem;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero {
