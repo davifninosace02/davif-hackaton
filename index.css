@@ -178,7 +178,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-lg);
-    margin: 100px 0;
+    margin: 10px 0;
 }
 
 .feature-card {
@@ -262,13 +262,13 @@ pre {
 .function { color: #bc87fe; }
 
 .config-section {
-    max-width: 850px;
-    margin: 0 auto 120px;
+    max-width: 425px;
+    margin: 0 auto 60px;
     text-align: center;
 }
 
 .config-actions {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .btn {
