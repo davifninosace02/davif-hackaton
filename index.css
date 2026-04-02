@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;500;700&display=swap');
 
 :root {
-    /* The Neon Architect Color Palette */
     --surface: #0d0e12;
     --surface-container: #18191e;
     --surface-container-low: #121318;
@@ -23,25 +22,21 @@
     --on-surface-variant: #abaab0;
     
     --error: #ff6e84;
-    --outline-variant: rgba(71, 72, 76, 0.15); /* Ghost Border */
+    --outline-variant: rgba(71, 72, 76, 0.15); 
     
-    /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 0.75rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.75rem;
     --spacing-xl: 2.5rem;
     
-    /* Radius */
     --radius-md: 0.75rem;
     --radius-lg: 1rem;
     
-    /* Gradients */
     --primary-gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
     --glass-bg: rgba(13, 14, 18, 0.85);
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +55,6 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    /* Subtle background grid pattern */
     background-image: 
         radial-gradient(circle at 2px 2px, rgba(199, 153, 255, 0.05) 1px, transparent 0);
     background-size: 40px 40px;
@@ -84,7 +78,6 @@ h1, h2, h3, .heading-font {
     -webkit-text-fill-color: transparent;
 }
 
-/* Nav Styles */
 nav {
     position: fixed;
     top: 0;
@@ -139,14 +132,12 @@ nav {
     align-items: center;
 }
 
-/* Hero Styles */
 .hero {
     padding: 240px 0 160px;
     text-align: center;
     position: relative;
 }
 
-/* Hero background glow */
 .hero::before {
     content: '';
     position: absolute;
@@ -183,7 +174,6 @@ nav {
     margin-top: 40px;
 }
 
-/* Feature Grid Styles */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -216,7 +206,6 @@ nav {
     font-size: 0.95rem;
 }
 
-/* Code Showcase Styles */
 .code-section {
     background: var(--surface-container-low);
     padding: var(--spacing-xl);
@@ -272,7 +261,6 @@ pre {
 .comment { color: #5a5b60; font-style: italic; }
 .function { color: #bc87fe; }
 
-/* Config Section Styles */
 .config-section {
     max-width: 850px;
     margin: 0 auto 120px;
@@ -283,10 +271,9 @@ pre {
     margin-top: 30px;
 }
 
-/* Button Styles */
 .btn {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: var(--radius-md);
     font-weight: 600;
     text-decoration: none;
@@ -302,13 +289,13 @@ pre {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 40px rgba(199, 153, 255, 0.4);
+    box-shadow: 0 0 20px rgba(199, 153, 255, 0.2);
 }
 
 .btn-secondary {
     background: transparent;
     color: var(--primary);
-    border: 1px solid var(--outline-variant);
+    border: 0.5px solid var(--outline-variant);
 }
 
 .btn-secondary:hover {
@@ -316,15 +303,14 @@ pre {
     border-color: var(--primary);
 }
 
-/* Chip Styles */
 .chip {
     padding: 0.5rem 1.2rem;
     background: #1e1f25;
     color: var(--on-surface-variant);
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 0.75rem;
     font-weight: 600;
-    border: 1px solid transparent;
+    border: 0.5px solid transparent;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -344,7 +330,6 @@ pre {
     margin-top: 20px;
 }
 
-/* Footer Styles */
 footer {
     padding: 140px 0 80px;
     border-top: 1px solid var(--outline-variant);
@@ -379,7 +364,6 @@ footer {
     opacity: 0.6;
 }
 
-/* Animation Reveal Classes */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -391,7 +375,6 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
